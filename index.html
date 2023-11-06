@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Invitation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <div>
+        <h4>Kepada <span>Bapak/Ibu/Saudara/i,</span></h4>
+        <h1>Mubarok & Novelia</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-5" onClick="enableScroll()"
+          >Lihat Undangan</a
+        >
+      </div>
+    </section>
+
+    <nav class="navbar navbar-expand-md sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Wedding Invitation</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Wedding Invitation
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>
+              7 Januari 2024 di Surabaya (Wanita)
+            </h3>
+            <h3>
+              8 Januari 2024 di Nganjuk (Pria)
+            </h3>
+            <p>
+              Oleh karena itu, dengan segala hormat, kami bermaksud untuk
+              mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara pernikahan
+              kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+             <div class="col-8 text-end">
+                <h3>M Khusnul Mubarak</h3>
+                <p>Putra dari Bpk. Munir <br />dan <br />Ibu Emyl</p>
+              </div>
+
+              <div class="col-4">
+                <!-- <img
+                  src="img/man.png"
+                  alt="mempelai putra"
+                  class="img-responsive rounded-circle"
+                /> -->
+              </div>
+            </div>
+          </div>
+
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <!-- <img
+                  src="img/women.png"
+                  alt="mempelai putri"
+                  class="img-responsive rounded-circle"
+                /> -->
+              </div>
+
+              <div class="col-8">
+                <h3>Novelia Adela Antonia</h3>
+                <p>Putri dari Bpk. Artono <br />dan <br />Ibu Anita</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Resepsi wanita : Sememi, Kec. Benowo, Surabaya
+            </p>
+
+            <iframe width="100%" height="30%" id="gmap_canvas" 
+              src="https://maps.google.com/maps?q=-7.251025, 112.633057&t=&z=12&ie=UTF8&iwloc=&output=embed" 
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+            <style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+
+            <br><br><br><br>
+            <p class="alamat">
+              Resepsi pria : Tanjungtani, Kec. Prambon, Kabupaten Nganjuk
+            </p>
+
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="100%" height="30%" id="gmap_canvas" 
+                  src="https://maps.google.com/maps?q=-7.722267, 112.030983&t=&z=12&ie=UTF8&iwloc=&output=embed" 
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                <style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style>
+                <style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+              </div>
+            </div>
+
+            <br><br><br><br>
+            <br><br><br><br>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Resepsi Pria</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>10.00 - selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Senin, 8 Januari 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi Wanita</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>12.00 - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 7 Januari 2024</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/save-and-sound.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <!-- script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Lightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <!-- Simply Countdown -->
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 1, // required
+        day: 7, // required
+        hours: 12, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "Hari", plural: "Hari" },
+          hours: { singular: "Jam", plural: "Jam" },
+          minutes: { singular: "Menit", plural: "Menit" },
+          seconds: { singular: "Detik", plural: "Detik" },
+        },
+      });
+    </script>
+
+    <!-- Fixed Bug - Overflow pada navbar ketika tampilan seluler dapat bergeser secara horizontal -->
+    <script>
+      const stykyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stykyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stykyTop.style.overflow = "hidden";
+      });
+    </script>
+
+    <!-- disableScroll -->
+    <script>
+      // mematikan smooth scrolling bootstrap yang ada pada root
+      const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      //   ambil element i yang ada di dalam icon wrapper
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
+
+      function disableScroll() {
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft =
+          window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        // mematikan smooth scrolling
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+
+        // aktifkan smooth scrolling
+        rootElement.style.scrollBehavior = "smooth";
+        playAudio();
+      }
+
+      function playAudio() {
+        song.volume = 0.1;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+
+        isPlaying = !isPlaying;
+      };
+
+      disableScroll();
+    </script>
+
+    <!-- callback response send confirmation guest -->
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Konvirmasi kehadiran berhasil dikirim!");
+          });
+        });
+      });
+    </script>
+
+    <!-- mengammbil query dari url -->
+    <script>
+      const urlPrams = new URLSearchParams(window.location.search);
+      const nama = urlPrams.get("n") || "";
+      const pronoun = urlPrams.get("p") || "Bapak/Ibu/Saudara/i";
+
+      const namaContainer = document.querySelector(".hero h4 span");
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+      document.querySelector("#nama").value = nama;
+    </script>
+
+    <!-- disqus -->
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+      (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement("script");
+        s.src = "https://wedding-invitation-demo.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+  </body>
+</html>
